@@ -1,0 +1,31 @@
+{
+  "name": "vikaskumarudemy",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon ./server.js",
+    "test:watch": "node --experimental-vm-modules node_modules/jest/bin/jest.js --watchAll",
+    "lint": "eslint '**/*.js' --fix --ignore-pattern node_module/",
+    "format": "prettier --write '**/*.js'"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "fastify": "^3.29.0"
+  },
+  "type": "module",
+  "devDependencies": {
+    "eslint": "^8.14.0",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-plugin-import": "^2.26.0",
+    "eslint-plugin-prettier": "^4.0.0",
+    "jest": "^28.0.3",
+    "nodemon": "^2.0.16",
+    "pino-pretty": "^7.6.1",
+    "prettier": "2.6.2",
+    "tap": "^16.1.0"
+  }
+}
